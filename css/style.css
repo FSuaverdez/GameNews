@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #00d9ff;
+    --background-color: rgb(21, 32, 43);
+    --max-width: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    color: #fff;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* REUSABLE CLASS */
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+}
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.card {
+    border: rgb(61, 84, 102) 2px solid;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION */
+
+#main-nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 1.25rem 1rem;
+    overflow: auto;
+    border-bottom: rgb(61, 84, 102) 1px solid;
+    z-index: 2;
+    background: var(--background-color);
+}
+
+#main-nav .container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+#main-nav .container h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    float: left;
+}
+
+#main-nav .container ul {
+    float: right;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#main-nav .container ul li,
+#main-nav .container ul li a {
+    display: inline-block;
+    border-bottom: var(--background-color) 1px solid;
+}
+
+#main-nav .container ul li a:hover {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) 1px solid;
+}
+
+.current {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) 1px solid !important;
+}
+
+/* FEATURED */
+
+.featured-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/featured.jpg") no-repeat center center/cover;
+    padding: 5rem;
+}
+
+#featured h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#featured p {
+    width: 70%;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.featured-img-lol {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/lol.jpg") no-repeat center center/cover;
+    padding: 5rem;
+}
+
+.featured-img-csgo {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/csgo.jpg") no-repeat center center/cover;
+    padding: 5rem;
+}
+.featured-img-dota2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/Dota-2.png") no-repeat center center/cover;
+    padding: 5rem;
+}
+
+/* ARTICLES */
+
+#home-articles .article-container {
+    max-width: var(--max-width);
+    margin: auto;
+    margin: 1rem auto;
+}
+
+#home-articles article p {
+    margin-bottom: 1rem;
+}
+#home-articles article h2 {
+    margin-bottom: 1rem;
+}
+#home-articles article a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+
+footer {
+    border-top: rgb(61, 84, 102) 1px solid;
+    padding: 2rem 0;
+}
+.footer-container {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+}
