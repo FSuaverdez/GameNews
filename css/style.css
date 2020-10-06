@@ -123,6 +123,10 @@ a {
     font-size: 2rem;
 }
 
+#featured a:hover {
+    color: var(--secondary-color);
+}
+
 #featured p {
     width: 70%;
     margin-bottom: 1rem;
