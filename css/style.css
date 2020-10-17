@@ -147,18 +147,15 @@ a:hover {
 .featured-img-lol {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../img/lol.jpg") no-repeat center center/cover;
-    padding: 5rem;
 }
 
 .featured-img-csgo {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../img/csgo.jpg") no-repeat center center/cover;
-    padding: 5rem;
 }
 .featured-img-dota2 {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../img/Dota-2.png") no-repeat center center/cover;
-    padding: 5rem;
 }
 
 /* ARTICLES */
@@ -254,8 +251,8 @@ footer {
 /* Youtube */
 iframe {
     text-align: center !important;
-    height: 300px !important;
-    width: 80% !important;
+    height: 350px !important;
+    width: 100%;
 }
 
 .vid {
