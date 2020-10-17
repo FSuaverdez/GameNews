@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* REUSABLE CLASS */
 
 .color-primary {
@@ -66,11 +70,14 @@ a {
     position: sticky;
     left: 0;
     top: 0;
-    padding: 1.25rem 1rem;
+    padding: 1rem 1rem;
     overflow: auto;
     border-bottom: rgb(61, 84, 102) 1px solid;
     z-index: 2;
     background: var(--background-color);
+}
+#main-nav a:hover {
+    color: #fff;
 }
 
 #main-nav .container {
@@ -82,14 +89,19 @@ a {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2rem;
-    float: left;
 }
 
 #main-nav .container ul {
-    float: right;
     list-style: none;
     font-size: 1.5rem;
     font-weight: bold;
+}
+#main-nav .container button {
+    z-index: 4;
+    color: #fff;
+}
+#main-nav .container .navbar {
+    background-color: var(--background-color) !important;
 }
 
 #main-nav .container ul li,
@@ -113,7 +125,6 @@ a {
 .featured-img {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../img/featured.jpg") no-repeat center center/cover;
-    padding: 5rem;
 }
 
 #featured h2 {
@@ -158,6 +169,14 @@ a {
     margin: 1rem auto;
 }
 
+#home-articles article {
+    height: 250px;
+    margin: 1rem;
+    margin: auto;
+}
+#home-articles article a {
+    width: 8rem;
+}
 #home-articles article p {
     margin-bottom: 1rem;
 }
@@ -173,6 +192,10 @@ a {
     padding: 2rem;
     line-height: 1.5;
     border-radius: 30px;
+}
+
+.art-col {
+    padding: 0.5rem;
 }
 
 #article .author {
@@ -220,12 +243,13 @@ a {
 
 footer {
     border-top: rgb(61, 84, 102) 1px solid;
-    padding: 2rem 0;
 }
+
 .footer-container {
     max-width: var(--max-width);
     margin: auto;
     text-align: center;
+    padding-top: 1rem;
 }
 /* Youtube */
 iframe {
