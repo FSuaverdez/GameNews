@@ -357,8 +357,16 @@ iframe {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  .container {
-    max-width: none;
+@media (max-width: 768px) {
+  #carousel section div {
+    padding: 0;
+  }
+
+  .p-5 {
+    padding: 4rem !important;
+  }
+
+  .carousel p {
+    width: 100% !important;
   }
 }
