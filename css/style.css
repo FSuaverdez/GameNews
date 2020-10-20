@@ -1,311 +1,364 @@
 :root {
-    --primary-color: #2196f3;
-    --secondary-color: #00d9ff;
-    --background-color: rgb(21, 32, 43);
-    --max-width: 1100px;
+  --primary-color: #2196f3;
+  --secondary-color: #00d9ff;
+  --background-color: rgb(21, 32, 43);
+  --max-width: 1100px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--background-color);
-    color: #fff;
-    overflow: auto;
-    font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-color);
+  color: #fff;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* REUSABLE CLASS */
 
 .color-primary {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn {
-    display: inline-block;
-    border: none;
-    color: #fff;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
 }
 .btn-primary {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .btn:hover {
-    opacity: 0.9;
-    color: #fff !important;
+  opacity: 0.9;
+  color: #fff !important;
 }
 
 .card {
-    border: rgb(61, 84, 102) 2px solid;
-    padding: 2rem;
-    margin-bottom: 1rem;
+  border: rgb(61, 84, 102) 2px solid;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .quote {
-    display: inline-block;
-    font-style: italic;
-    background: rgb(121, 134, 146);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 15px;
+  display: inline-block;
+  font-style: italic;
+  background: rgb(121, 134, 146);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
 }
 
 /* NAVIGATION */
 
 #main-nav {
-    position: sticky;
-    left: 0;
-    top: 0;
-    padding: 1rem 1rem;
-    overflow: auto;
-    border-bottom: rgb(61, 84, 102) 1px solid;
-    z-index: 2;
-    background: var(--background-color);
+  position: sticky;
+  left: 0;
+  top: 0;
+  padding: 1rem 1rem;
+  overflow: auto;
+  border-bottom: rgb(61, 84, 102) 1px solid;
+  z-index: 2;
+  background: var(--background-color);
 }
 #main-nav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 #main-nav .container {
-    max-width: var(--max-width);
-    margin: auto;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 #main-nav .container h1 {
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .navbar-brand {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #main-nav .container ul {
-    list-style: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 #main-nav .container button {
-    z-index: 4;
-    color: #fff;
+  z-index: 4;
+  color: #fff;
 }
 #main-nav .container .navbar {
-    background-color: var(--background-color) !important;
+  background-color: var(--background-color) !important;
 }
 
 #main-nav .container ul li,
 #main-nav .container ul li a {
-    display: inline-block;
-    border-bottom: var(--background-color) 1px solid;
+  display: inline-block;
+  border-bottom: var(--background-color) 1px solid;
 }
 
 #main-nav .container ul li a:hover {
-    color: var(--secondary-color);
-    border-bottom: var(--secondary-color) 1px solid;
-    transition: all 0.3s ease-in-out;
+  color: var(--secondary-color);
+  border-bottom: var(--secondary-color) 1px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 .current {
-    color: var(--secondary-color);
-    border-bottom: var(--secondary-color) 1px solid !important;
+  color: var(--secondary-color);
+  border-bottom: var(--secondary-color) 1px solid !important;
 }
 
 /* FEATURED */
 
 .featured-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/featured.jpg") no-repeat center center/cover;
-    background-size: 125%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/featured.jpg') no-repeat center center/cover;
+  background-size: 125%;
+  transition: all 0.3s ease-in-out;
 }
 .featured-img:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/featured.jpg") no-repeat center center/cover;
-    background-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/featured.jpg') no-repeat center center/cover;
+  background-size: 100%;
+}
+.featured-img2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/csgo.jpg') no-repeat center center/cover;
+  background-size: 125%;
+  transition: all 0.3s ease-in-out;
+}
+.featured-img2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/csgo.jpg') no-repeat center center/cover;
+  background-size: 100%;
+}
+.featured-img3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/article/article2.jpg') no-repeat center center/cover;
+  background-size: 125%;
+  transition: all 0.3s ease-in-out;
+}
+.featured-img3:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/article/article2.jpg') no-repeat center center/cover;
+  background-size: 100%;
 }
 
 #featured h2 {
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 #featured a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 #featured p {
-    width: 70%;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+  width: 70%;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+#featured2 h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#featured2 a:hover {
+  color: var(--secondary-color);
+}
+
+#featured2 p {
+  width: 70%;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+#featured3 h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#featured3 a:hover {
+  color: var(--secondary-color);
+}
+
+#featured3 p {
+  width: 70%;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .featured-img-lol {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/lol.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/lol.jpg') no-repeat center center/cover;
 }
 
 .featured-img-csgo {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/csgo.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/csgo.jpg') no-repeat center center/cover;
 }
 .featured-img-dota2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/Dota-2.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/Dota-2.png') no-repeat center center/cover;
 }
 
 /* ARTICLES */
 
 #home-articles .article-container {
-    max-width: var(--max-width);
-    margin: auto;
-    margin: 1rem auto;
+  max-width: var(--max-width);
+  margin: auto;
+  margin: 1rem auto;
 }
 
 #home-articles article a {
-    width: 8rem;
+  width: 8rem;
 }
 #home-articles article p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 #home-articles article h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 #home-articles article a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 #article {
-    background: rgb(51, 62, 73);
-    padding: 2rem;
-    line-height: 1.5;
-    border-radius: 30px;
+  background: rgb(51, 62, 73);
+  padding: 2rem;
+  line-height: 1.5;
+  border-radius: 30px;
 }
 
 .art-col {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 #article .author {
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 #article .date {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
 }
 #article .title {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .art1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/featured.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 150%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/featured.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 150%;
+  transition: all 0.3s ease-in-out;
 }
 .art1:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../img/featured.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/featured.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
 }
 .art2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article2.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 150%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article2.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 150%;
+  transition: all 0.3s ease-in-out;
 }
 .art2:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article2.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article2.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
 }
 .art3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article3.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 150%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article3.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 150%;
+  transition: all 0.3s ease-in-out;
 }
 .art3:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article3.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article3.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
 }
 .art4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article4.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 150%;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article4.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 150%;
+  transition: all 0.3s ease-in-out;
 }
 .art4:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url("../img/article/article4.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/article/article4.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
 }
 /* Footer */
 
 footer {
-    border-top: rgb(61, 84, 102) 1px solid;
+  border-top: rgb(61, 84, 102) 1px solid;
 }
 
 .footer-container {
-    max-width: var(--max-width);
-    margin: auto;
-    text-align: center;
-    padding-top: 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+  text-align: center;
+  padding-top: 1rem;
 }
 /* Youtube */
 iframe {
-    text-align: center !important;
-    height: 350px !important;
-    width: 100%;
+  text-align: center !important;
+  height: 350px !important;
+  width: 100%;
 }
 
 .vid {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
-    .container {
-        max-width: none;
-    }
+  .container {
+    max-width: none;
+  }
 }
