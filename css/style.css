@@ -73,7 +73,7 @@ a:hover {
   padding: 1rem 1rem;
   overflow: auto;
   border-bottom: rgb(61, 84, 102) 1px solid;
-  z-index: 2;
+  z-index: 4;
   background: var(--background-color);
 }
 #main-nav a:hover {
@@ -369,4 +369,24 @@ iframe {
   .row {
     margin: 0 !important;
   }
+
+  #featured .container {
+    height: 250px;
+  }
+  #featured2 .container {
+    height: 250px;
+  }
+  #featured3 .container {
+    height: 250px;
+  }
+
+  #featured p {
+    width: 100%;
+  }
+}
+
+/* Fix Carousel Indicator */
+
+.carousel-indicators {
+  z-index: 3;
 }
